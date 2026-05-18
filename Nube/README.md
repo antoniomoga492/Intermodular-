@@ -4,7 +4,7 @@ En esta carpeta está el trabajo del MPO de Fundamentos de Computación en la Nu
 
 ## Archivos
 
-- `cloud-mogarry.pdf` — Documento completo con la investigación, la arquitectura y la estimación de costes.
+- `Nube.pdf` — Documento completo con la investigación, la arquitectura y la estimación de costes.
 
 ## Qué hay dentro del PDF
 
