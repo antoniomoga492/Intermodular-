@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ARCHIVO DE DEMOSTRACIÓN DE FALLOS
+    Este XML contiene errores INTENCIONADOS para demostrar
+    que el XSD detecta correctamente los datos incorrectos.
+
+    Fallos introducidos:
+    1) tipo="impresora"   → no está en la enumeración (servidor/switch/router/firewall/nas/sai)
+    2) estado="encendido" → no está en la enumeración (operativo/mantenimiento/baja/almacen)
+    3) ip="999.999.1.1"   → no cumple el patrón IPv4 (octetos > 255)
+    4) mac="ZZ:1A:2B:3C:4D:5E" → no cumple el patrón hexadecimal
+    5) vlan="9999"        → fuera del rango 1-4094
+    6) cif="12345678"     → no cumple el patrón (falta letra inicial)
+    7) ubicacion sala="SALA-Z" → referencia a una sala que NO existe (IDREF roto)
+-->
+<inventario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="esquema.xsd"
+    version="2.4.1">
+
+    <empresa>
+        <nombre>MoGarry Corp.</nombre>
+        <cif>12345678</cif>
+        <fecha-inventario>2026-05-13</fecha-inventario>
+        <responsable>Sergio Manzano</responsable>
+    </empresa>
+
+    <salas>
+        <sala id="SALA-A">
+            <nombre>Sala A - Producción</nombre>
+            <capacidad-u>160</capacidad-u>
+            <temperatura-objetivo>21.5</temperatura-objetivo>
+            <certificacion>Tier III</certificacion>
+        </sala>
+    </salas>
+
+    <equipos>
+        <equipo id="EQ-001" tipo="impresora" estado="encendido">
+            <fabricante>HPE</fabricante>
+            <modelo>ProLiant DL380 Gen11</modelo>
+            <numero-serie>HPE-DL380-2024-A001</numero-serie>
+            <ubicacion sala="SALA-Z" rack="R-04" unidad="U12" />
+            <red>
+                <ip>999.999.1.1</ip>
+                <mac>ZZ:1A:2B:3C:4D:5E</mac>
+                <vlan>9999</vlan>
+            </red>
+            <fecha-compra>2024-03-15</fecha-compra>
+            <fin-garantia>2027-03-15</fin-garantia>
+            <servicios>
+                <servicio>Hipervisor VMware vSphere</servicio>
+            </servicios>
+        </equipo>
+    </equipos>
+</inventario>
