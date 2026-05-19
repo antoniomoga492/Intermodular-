@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Antonio Daniel Moga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="img/CVA.pdf" class="btn-cv-header" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i> CV
+                </a>
+
+                <div class="config-container">
+                    <button id="menu-icon" class="menu-trigger">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+
+                    <div id="dropdown-config" class="dropdown">
+                        <div class="dropdown-section-label">Apariencia</div>
+                        <div class="dropdown-item">
+                            <span><i class="fa-solid fa-moon"></i> Modo Oscuro</span>
+                            <label class="switch">
+                                <input type="checkbox" id="theme-switch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-section-label">Navegación</div>
+                        <div class="dropdown-item" onclick="scrollToSection('sobre-mi')">
+                            <span><i class="fa-solid fa-user"></i> Sobre Mí</span>
+                        </div>
+                        <div class="dropdown-item" onclick="scrollToSection('formacion')">
+                            <span><i class="fa-solid fa-graduation-cap"></i> Formación</span>
+                        </div>
+                        <div class="dropdown-item" onclick="scrollToSection('proyectos')">
+                            <span><i class="fa-solid fa-code"></i> Proyectos</span>
+                        </div>
+                        <div class="dropdown-item" onclick="scrollToSection('objetivos')">
+                            <span><i class="fa-solid fa-bullseye"></i> Objetivos</span>
+                        </div>
+                        <div class="dropdown-item" onclick="scrollToSection('contacto')">
+                            <span><i class="fa-solid fa-envelope"></i> Contacto</span>
+                        </div>
+                        <div class="dropdown-divider"></div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ── HERO ── -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Estudiante de ASIR &amp; Ciberseguridad</span>
+
+                <!-- Foto + nombre en línea -->
+                <div class="hero-inner">
+                    <img src="img/AntonioFotoCV.png" alt="Antonio Daniel Moga" class="hero-avatar">
+                    <div class="hero-text-block">
+                        <h1 class="glitch-text">Antonio Daniel Moga</h1>
+                    </div>
+                </div>
+
+                <p class="hero-description">Enfocado en administración de sistemas Windows y redes Cisco.</p>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary btn-glow">Ver mis trabajos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar conmigo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SOBRE MÍ ── -->
+        <section id="sobre-mi" class="content-block alt-bg">
+            <div class="container">
+                <h2 class="title"><span class="num">01 /</span> Sobre Mí</h2>
+
+                <div class="about-layout">
+
+                    <!-- Columna foto -->
+                    <div class="about-photo-col">
+                        <div class="photo-frame">
+                            <div class="photo-glow"></div>
+                            <div class="photo-border-ring"></div>
+                            <img src="img/AntonioFotoCV.png" alt="Antonio Daniel Moga" class="profile-photo">
+                            <!-- Badge "disponible para prácticas" eliminado -->
+                        </div>
+                        <div class="photo-name-card">
+                            <span class="photo-name">Antonio Daniel Moga</span>
+                            <span class="photo-role">ASIR · Ciberseguridad</span>
+                        </div>
+                    </div>
+
+                    <!-- Columna contenido -->
+                    <div class="about-content-col">
+
+                        <div class="about-box">
+                            <p>Actualmente curso de forma simultánea el <strong>Grado Superior en ASIR</strong> y un
+                                <strong>Máster en Ciberseguridad</strong>. Esta formación dual me permite combinar una
+                                base sólida en infraestructuras con una especialización temprana en seguridad digital.
+                                Me
+                                apasiona el montaje de hardware y la administración de redes. Mi enfoque es la
+                                <strong>seguridad defensiva</strong>: proteger sistemas contra el cibercrimen,
+                                garantizando la integridad y resiliencia de infraestructuras críticas.
+                            </p>
+                        </div>
+
+                        <div class="about-meta">
+                            <div class="meta-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>ASIR — Grado Superior</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Máster en Ciberseguridad</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>España</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <span>Seguridad Defensiva</span>
+                            </div>
+                        </div>
+
+                        <!-- ── TECNOLOGÍAS — formato orgánico ── -->
+                        <div class="skills-blocks">
+
+                            <div class="skill-block skills-organic-block">
+                                <div class="skill-block-header">
+                                    <div class="skill-block-icon">
+                                        <i class="fa-solid fa-terminal"></i>
+                                    </div>
+                                    <div>
+                                        <span class="skill-block-label">Lenguajes &amp; Desarrollo</span>
+                                    </div>
+                                </div>
+                                <p class="skills-organic-prose">
+                                    En desarrollo manejo principalmente
+                                    <span class="s-tag"><i class="fa-brands fa-python"></i> Python</span> y
+                                    <span class="s-tag"><i class="fa-brands fa-js"></i> JavaScript</span>,
+                                    apoyados por
+                                    <span class="s-tag"><i class="fa-brands fa-html5"></i> HTML5</span> y
+                                    <span class="s-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                                    para la capa web. Para automatizar tareas en sistemas Windows recurro habitualmente
+                                    a
+                                    <span class="s-tag"><i class="fa-solid fa-terminal"></i> PowerShell</span>.
+                                </p>
+                            </div>
+
+                            <div class="skill-block skills-organic-block">
+                                <div class="skill-block-header">
+                                    <div class="skill-block-icon cyan">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <div>
+                                        <span class="skill-block-label">Infraestructura &amp; Redes</span>
+                                    </div>
+                                </div>
+                                <p class="skills-organic-prose">
+                                    Trabajo con
+                                    <span class="s-tag"><i class="fa-solid fa-diagram-project"></i> Cisco Packet
+                                        Tracer</span>
+                                    para diseño y simulación de redes, virtualizo entornos con
+                                    <span class="s-tag"><i class="fa-solid fa-box"></i> Oracle VirtualBox</span>
+                                    y administro infraestructuras Microsoft mediante
+                                    <span class="s-tag"><i class="fa-solid fa-users-gear"></i> Active Directory</span>,
+                                    <span class="s-tag"><i class="fa-solid fa-network-wired"></i> VLANs</span>,
+                                    <span class="s-tag"><i class="fa-solid fa-server"></i> DNS / Entra ID</span>
+                                    y la nube con
+                                    <span class="s-tag"><i class="fa-brands fa-microsoft"></i> Microsoft Azure</span>.
+                                </p>
+                            </div>
+
+                            <div class="skill-block skills-organic-block">
+                                <div class="skill-block-header">
+                                    <div class="skill-block-icon">
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+                                    <div>
+                                        <span class="skill-block-label">Bases de Datos &amp; Herramientas</span>
+                                    </div>
+                                </div>
+                                <p class="skills-organic-prose">
+                                    Para persistencia de datos utilizo
+                                    <span class="s-tag"><i class="fa-solid fa-database"></i> SQL / NoSQL</span>
+                                    gestionado con
+                                    <span class="s-tag"><i class="fa-solid fa-table"></i> pgAdmin4</span>,
+                                    y como entorno de desarrollo mi editor principal es
+                                    <span class="s-tag"><i class="fa-solid fa-code"></i> Visual Studio Code</span>.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div><!-- /about-content-col -->
+                </div><!-- /about-layout -->
+            </div>
+        </section>
+
+        <!-- ── FORMACIÓN ACADÉMICA ── -->
+        <section id="formacion" class="content-block">
+            <div class="container">
+                <h2 class="title"><span class="num">02 /</span> Formación Académica</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">2025 — Actualidad</span>
+                                <span class="timeline-badge">En curso</span>
+                            </div>
+                            <h3>Grado Superior en ASIR</h3>
+                            <p class="timeline-place"><i class="fa-solid fa-building-columns"></i> Centro de formación —
+                                España</p>
+                            <p>Administración de Sistemas Informáticos en Red. Redes, virtualización, servidores, Active
+                                Directory, scripting y seguridad en entornos Windows/Linux.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot cyan"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">2025 — Actualidad</span>
+                                <span class="timeline-badge cyan">En curso</span>
+                            </div>
+                            <h3>Máster en Ciberseguridad</h3>
+                            <p class="timeline-place"><i class="fa-solid fa-building-columns"></i> Online — España
+                            </p>
+                            <p>Especialización en seguridad ofensiva y defensiva, análisis de amenazas, gestión de
+                                incidentes y protección de infraestructuras críticas.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── EXPERIENCIA PROFESIONAL ── -->
+        <section id="experiencia" class="content-block alt-bg">
+            <div class="container">
+                <h2 class="title"><span class="num">03 /</span> Experiencia Profesional</h2>
+
+                <div class="exp-empty-state">
+                    <div class="exp-empty-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3>Formación activa, experiencia en construcción</h3>
+                    <p>Actualmente enfocado al 100% en la formación dual. Buscando mis primeras prácticas profesionales
+                        en el sector IT / Ciberseguridad para aplicar los conocimientos adquiridos en entornos reales.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary btn-glow"
+                        style="margin-top:1.2rem; display:inline-flex;">
+                        <i class="fa-solid fa-handshake"></i> &nbsp; Contáctame
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── IDIOMAS & HERRAMIENTAS DIGITALES ── -->
+        <section id="idiomas" class="content-block">
+            <div class="container">
+                <h2 class="title"><span class="num">04 /</span> Idiomas &amp; Herramientas Digitales</h2>
+
+                <div class="two-col-grid">
+
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="skill-block-icon">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <span class="skill-block-label">Idiomas</span>
+                        </div>
+                        <div class="lang-list">
+                            <div class="lang-item">
+                                <div class="lang-name">
+                                    <span class="lang-flag">🇷🇴</span>
+                                    <span>Rumano</span>
+                                </div>
+                                <div class="lang-level-bar">
+                                    <div class="lang-fill" style="width:100%"></div>
+                                </div>
+                                <span class="lang-label">Nativo</span>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-name">
+                                    <span class="lang-flag">🇪🇸</span>
+                                    <span>Español</span>
+                                </div>
+                                <div class="lang-level-bar">
+                                    <div class="lang-fill" style="width:100%"></div>
+                                </div>
+                                <span class="lang-label">Nativo / C2</span>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-name">
+                                    <span class="lang-flag">🇬🇧</span>
+                                    <span>Inglés</span>
+                                </div>
+                                <div class="lang-level-bar">
+                                    <div class="lang-fill" style="width:55%"></div>
+                                </div>
+                                <span class="lang-label">B1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="skill-block-icon cyan">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <span class="skill-block-label">Herramientas Digitales</span>
+                        </div>
+                        <div class="skills-grid" style="margin-top:0.8rem;">
+                            <span class="skill-tag life"><i class="fa-brands fa-microsoft"></i> Microsoft 365</span>
+                            <span class="skill-tag life"><i class="fa-solid fa-file-powerpoint"></i> Office Suite</span>
+                            <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill-tag"><i class="fa-solid fa-terminal"></i> VS Code</span>
+                            <span class="skill-tag life"><i class="fa-solid fa-cloud"></i> Microsoft Azure</span>
+                            <span class="skill-tag"><i class="fa-solid fa-box"></i> VirtualBox</span>
+                            <span class="skill-tag life"><i class="fa-solid fa-shield-halved"></i> Wireshark</span>
+                            <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Packet Tracer</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── PROYECTOS ── -->
+        <section id="proyectos" class="content-block alt-bg">
+            <div class="container">
+                <h2 class="title"><span class="num">05 /</span> Proyectos Realizados</h2>
+                <div class="grid">
+
+                    <!-- Proyecto 1 -->
+                    <div class="card">
+                        <i class="fa-brands fa-windows card-icon"></i>
+                        <h3>BitLocker en Windows Server</h3>
+                        <p>Activación de BitLocker en Windows Server como fase final de una gestión integral de
+                            seguridad: cifrado de unidad, configuración de TPM mediante directiva de grupo y
+                            verificación del arranque protegido.</p>
+                        <div class="card-pdf-only">
+                            <a href="img/BitLocker.pdf" target="_blank" class="pdf-btn-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Ver documentación PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="card">
+                        <i class="fa-solid fa-network-wired card-icon icon-alt"></i>
+                        <h3>Detección de Errores — Cisco Packet Tracer</h3>
+                        <p>Práctica académica de detección y resolución de nueve fallos de red en Cisco Packet Tracer:
+                            IPs erróneas, interfaces apagadas, rutas RIP mal configuradas y redundancias de enlace.</p>
+                        <div class="card-pdf-only">
+                            <a href="img/DeteccionDeErrores.pdf" target="_blank" class="pdf-btn-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Ver documentación PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="card">
+                        <i class="fa-solid fa-diagram-project card-icon"></i>
+                        <h3>Red Cisco con OSPF y ACLs</h3>
+                        <p>Proyecto personal de diseño de red en Cisco Packet Tracer con enrutamiento dinámico OSPF y
+                            listas de control de acceso extendidas (ACL) para filtrado de tráfico por zona y
+                            protocolo.</p>
+                        <div class="card-pdf-only">
+                            <a href="img/OPSF_ACL.pdf" target="_blank" class="pdf-btn-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Ver documentación PDF
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── OBJETIVOS & REFLEXIÓN ── -->
+        <section id="objetivos" class="content-block">
+            <div class="container">
+                <h2 class="title"><span class="num">06 /</span> Objetivos &amp; Reflexión</h2>
+
+                <div class="two-col-grid">
+
+                    <div class="info-card goal-card">
+                        <div class="info-card-header">
+                            <div class="skill-block-icon">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <span class="skill-block-label">Objetivos Profesionales</span>
+                        </div>
+                        <div class="reflection-text">
+                            <p>Mi meta es consolidarme como un especialista referente en <strong>Ciberseguridad
+                                    Defensiva</strong>, protegiendo infraestructuras críticas frente a las amenazas más
+                                complejas. Mi enfoque se basa en la <strong>excelencia técnica</strong> y en una
+                                mentalidad de superación constante para destacar en un entorno altamente competitivo.
+                            </p>
+                            <p>Para ello, estoy comprometido con un plan de <strong>formación de alto
+                                    rendimiento</strong>, con el objetivo de obtener el mayor número de certificaciones
+                                posibles y alcanzar el máximo nivel de acreditación en el sector. Mi prioridad es el
+                                aprendizaje continuo y la actualización permanente, asegurándome de dominar siempre las
+                                herramientas y tácticas más avanzadas de defensa.</p>
+                            <p>A nivel profesional, aspiro a integrarme en equipos de respuesta y seguridad donde pueda
+                                sobresalir por mis capacidades y aportar un <strong>valor diferencial</strong> en
+                                entornos de alta exigencia. A largo plazo, mi objetivo es desarrollarme en las compañías
+                                líderes que definen el futuro de la ciberseguridad, como <strong>Microsoft</strong>,
+                                <strong>Cisco</strong> o <strong>Google Mandiant</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card reflection-card">
+                        <div class="info-card-header">
+                            <div class="skill-block-icon cyan">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <span class="skill-block-label">Reflexión Personal</span>
+                        </div>
+                        <div class="reflection-text">
+                            <p>Elegir la tecnología como camino no fue una decisión al azar. Desde siempre me ha
+                                fascinado entender cómo funcionan los sistemas desde dentro, desde el hardware más
+                                básico hasta las capas más complejas de la red.</p>
+                            <p>Cursar simultáneamente ASIR y un Máster en Ciberseguridad es exigente, pero me ha
+                                enseñado a trabajar bajo presión, a gestionar el tiempo y, sobre todo, a entender que la
+                                seguridad no es una capa que se añade al final, sino la base sobre la que se construye
+                                todo.</p>
+                            <p>Mi objetivo no es solo encontrar vulnerabilidades, sino <strong>construir sistemas
+                                    resilientes</strong> que protejan lo que importa.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CONTACTO ── -->
+        <section id="contacto" class="content-block alt-bg">
+            <div class="container">
+                <h2 class="title"><span class="num">07 /</span> Contacto</h2>
+                <div class="contact-grid">
+
+                    <a href="tel:638127175" class="contact-card contact-card-phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <p>638 12 71 75</p>
+                    </a>
+
+                    <a href="mailto:antoniomoga492@gmail.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>antoniomoga492@gmail.com</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/antonio-daniel-moga-095aab323/" target="_blank"
+                        class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Conecta conmigo</p>
+                    </a>
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
