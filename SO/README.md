@@ -2,10 +2,6 @@
 
 En esta carpeta está el trabajo del módulo de Implantación de Sistemas Operativos. He montado el servidor de dominio de MoGarry sobre Windows Server 2019 virtualizado en VirtualBox, levantando los servicios que necesitaría la empresa para funcionar internamente: Active Directory para gestionar usuarios y permisos, DNS, una carpeta compartida con permisos por grupo, dos máquinas cliente unidas al dominio (una de oficina y otra de administración) y un sistema de copias de seguridad programado mediante Windows Server Backup.
 
-## Archivos
-
-- `capturas/` — Capturas de pantalla del proceso completo, ordenadas por fase.
-- `README.md` — Este documento.
 
 ## Entorno de virtualización
 
